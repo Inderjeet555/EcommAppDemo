@@ -17,7 +17,7 @@
                <a href="#"><img src="./RedStore_Img/images/logo.png" alt="RedStore Logo" width="125px"></a> 
             </div>
             <nav>
-                <ul>
+                <ul id="menuItems">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">About</a></li>
@@ -26,6 +26,7 @@
                 </ul>
             </nav>
             <img src="./RedStore_Img/images/cart.png" width="30px" height="30px" alt="cart-img">
+            <img src="./RedStore_Img/images/menu.png" class="menu-icon" onclick="menuToggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -315,15 +316,22 @@
 
 <!-- Brands Section End -->
 
+
+<!-- Start footer Section -->
+
 <div class="footer">
 <div class="container">
     <div class="row">
         <div class="footer-col-1">
             <h3>Download our App</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, porro?</p>
+            <div class="app-logo">
+                <img src="./RedStore_Img/images/play-store.png" alt="Android">
+                <img src="./RedStore_Img/images/app-store.png" alt="logo-footer"> 
+            </div>
         </div> 
         <div class="footer-col-2">
-            <img src="./RedStore_Img/images/logo-white.png" alt="logo-footer">
+            <img src="./RedStore_Img/images/logo-white.png" alt="logo-footer">           
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis <br>, porro?</p>
         </div>
         <div class="footer-col-3">
@@ -345,8 +353,30 @@
             </ul>
         </div>
     </div>
+    <hr>
+    <p class="copyright">copyright 2020 - SSS Musical.com</p>
 </div>
 </div>
+
+<!-- End footer Section -->
+
+<!-- JS For toggle Menu -->
+
+<script>
+    var menuItems =  document.getElementById('menuItems');
+    menuItems.style.maxHeight = "0px";
+
+    function menuToggle(){
+       if (menuItems.style.maxHeight == "0px")
+       {
+        menuItems.style.maxHeight = "200px";
+       }
+       else
+       {
+        menuItems.style.maxHeight = "0px";
+       }
+    }
+</script>
 
 </body>
 </html>
