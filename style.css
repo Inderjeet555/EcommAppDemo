@@ -92,6 +92,23 @@ nav ul li a{
    background: #563434;
 }
 
+
+.row .btn-cart{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 12px;
+    margin: 5px 0px;
+    border-radius: 30px;
+    text-decoration: none;        
+}
+
+.row .btn-cart:hover{ 
+    background: #563434;
+}
+
+
 /* End Header Section */
 
 /* <!-- Featured Categories --> */
