@@ -370,48 +370,8 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-<script>    
-    var menuItems =  document.getElementById('menuItems');
-    var menuTogles = document.querySelector('.menu-container');
-    menuItems.style.maxHeight = "0px";
-
-    // function menuToggle() {
-       
-    // }
-
-    function menuToggleIcon() {
-       // console.log(menuTogles);
-        menuTogles.classList.toggle("change");
-        
-
-        if (menuItems.style.maxHeight == "0px")
-       {
-        menuItems.style.maxHeight = "200px";
-       }
-       else
-       {
-        menuItems.style.maxHeight = "0px";
-       }
-    }
+<script src="./script.js"></script>  
     
-    let topnavHeight = ($('.header').height());
-    // console.log(topnavHeight);
-
-    function navBarFixed(){
-        if($('.header').length){
-            $(window).scroll(function(){
-                let scroll = $(window).scrollTop();                
-                if(scroll >= topnavHeight){
-                    $('.header .container .navbar').addClass('navbar-fixed');
-                }else{
-                    $('.header .container .navbar').removeClass('navbar-fixed');
-                }
-            });
-        }
-    }
-
-    navBarFixed();
-</script>
 
 </body>
 </html>
